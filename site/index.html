@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Oleksandr Kalinkin</title>
+    <meta
+      name="description"
+      content="Oleksandr Kalinkin, software engineer. LinkedIn, Upwork, GitHub, and Vault Planner."
+   >
+    <link rel="canonical" href="https://shamahan.com/">
+
+    <!--
+      Enough for a link card to show a title and a line of text. There is
+      deliberately no og:image: a picture for chat-app previews would cost
+      a 50-150 KB file and a tool to generate it, on a page that is a
+      name and four links and is rarely shared anywhere a card unfurls.
+    -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shamahan.com/">
+    <meta property="og:title" content="Oleksandr Kalinkin">
+    <meta
+      property="og:description"
+      content="Software engineer. LinkedIn, Upwork, GitHub, and Vault Planner."
+   >
+
+    <!-- Browser chrome matches the page background in either theme. -->
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0e1412">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4f7f5">
+
+    <!--
+      The one script element on the page, and it never runs: application/ld+json
+      is data a search engine reads to learn that this person is these
+      profiles. sameAs is the only widely understood way to say so.
+      Nothing on this page executes.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Oleksandr Kalinkin",
+        "jobTitle": "Software engineer",
+        "url": "https://shamahan.com/",
+        "sameAs": [
+          "https://www.linkedin.com/in/oleksandr-kalinkin/",
+          "https://www.upwork.com/freelancers/~01e6c27632a0930440",
+          "https://github.com/shamahan"
+        ]
+      }
+    </script>
+
+    <style>
+      /* The typeface is served from this domain, not from Google, so the
+         page makes no request to any third party. One variable file,
+         latin subset, copied from vault-planner along with its OFL
+         licence in fonts/. The descriptors are Google's own for that
+         file.
+
+         The path is relative, not /fonts/...: until the custom domain is
+         attached, a project repo's Pages site lives under
+         shamahan.github.io/shamahan.com/, where an absolute path would
+         miss. Relative works in both places. */
+      @font-face {
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 100 900;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(fonts/archivo-latin-variable.woff2) format('woff2');
+      }
+
+      /* The dark values are vault-planner's, by value, so shamahan.com and
+         vault.shamahan.com read as one family. The light set is the same
+         family inverted; the accent and the muted tone are darkened so both
+         pass WCAG AA (4.5:1) against the light background. */
+      :root {
+        color-scheme: dark light;
+        --ground: #0e1412;
+        --text: #dce5e0;
+        --dim: #8b9a94;
+        --accent: #e3a63c;
+        --sans: Archivo, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      }
+      @media (prefers-color-scheme: light) {
+        :root {
+          --ground: #f4f7f5;
+          --text: #1c2622;
+          --dim: #5f6d67;
+          --accent: #8a5a10;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: var(--ground);
+        color: var(--text);
+        font-family: var(--sans);
+        font-size: 18px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      main {
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 48px 24px;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(32px, 6vw, 48px);
+        font-weight: 600;
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+      }
+      .role {
+        margin: 0 0 28px;
+        color: var(--dim);
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 28px;
+        margin: 0 0 56px;
+      }
+      /* One project, so one line. A card, or a "Projects" heading, over a
+         single item reads as a gap where more was meant to be; a line
+         does not. A second project is a second line. */
+      .project {
+        margin: 0;
+      }
+      .project span {
+        color: var(--dim);
+      }
+      /* Underlined, because with no script and no hover choreography the
+         underline is the one honest signal that a thing is clickable. */
+      a {
+        color: var(--accent);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+      /* On a phone the column starts at the top instead of floating in
+         the middle of a tall viewport, and the gaps tighten a little. */
+      @media (max-width: 480px) {
+        body {
+          align-items: flex-start;
+        }
+        main {
+          padding: 32px 16px;
+        }
+        .role {
+          margin-bottom: 24px;
+        }
+        nav {
+          gap: 24px;
+          margin-bottom: 44px;
+        }
+      }
+    </style>
+  </head>
+
+  <!--
+    Everything below is the whole page, in reading order, and none of it
+    needs JavaScript to render. A crawler, a screen reader and a browser
+    with scripts off all get the same thing.
+  -->
+  <body>
+    <main>
+      <h1>Oleksandr Kalinkin</h1>
+      <p class="role">Software engineer</p>
+
+      <nav aria-label="Profiles">
+        <a href="https://www.linkedin.com/in/oleksandr-kalinkin/" rel="me noopener">LinkedIn</a>
+        <a href="https://www.upwork.com/freelancers/~01e6c27632a0930440" rel="me noopener">Upwork</a>
+        <a href="https://github.com/shamahan" rel="me noopener">GitHub</a>
+      </nav>
+
+      <p class="project">
+        <a href="https://vault.shamahan.com/" rel="noopener">Vault Planner</a>
+        <span>— a layout planner for Fallout Shelter</span>
+      </p>
+    </main>
+  </body>
+</html>
