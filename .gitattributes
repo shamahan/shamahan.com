@@ -1,0 +1,6 @@
+# Normalise every text file to LF in the repository and in the working tree,
+# so a Windows checkout and the Linux Pages runner see identical bytes.
+* text=auto eol=lf
+
+# Binary files git must not touch.
+*.woff2 binary

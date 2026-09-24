@@ -1,0 +1,5 @@
+# One page, meant to be found.
+User-agent: *
+Allow: /
+
+Sitemap: https://shamahan.com/sitemap.xml
