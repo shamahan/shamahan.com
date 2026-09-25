@@ -7,7 +7,7 @@
     <title>Oleksandr Kalinkin</title>
     <meta
       name="description"
-      content="Oleksandr Kalinkin, software engineer. LinkedIn, Upwork, GitHub, and Vault Planner."
+      content="Oleksandr Kalinkin, software engineer. LinkedIn, Upwork, GitHub, Vault Planner, and BipDuel."
     >
     <link rel="canonical" href="https://shamahan.com/">
 
@@ -22,7 +22,7 @@
     <meta property="og:title" content="Oleksandr Kalinkin">
     <meta
       property="og:description"
-      content="Software engineer. LinkedIn, Upwork, GitHub, and Vault Planner."
+      content="Software engineer. LinkedIn, Upwork, GitHub, Vault Planner, and BipDuel."
     >
 
     <!-- Browser chrome matches the page background in either theme. -->
@@ -132,11 +132,14 @@
         gap: 28px;
         margin: 0 0 56px;
       }
-      /* One project, so one line. A card, or a "Projects" heading, over a
-         single item reads as a gap where more was meant to be; a line
-         does not. A second project is a second line. */
+      /* Projects are lines, one each. A card grid or a "Projects" heading
+         over one or two items reads as a gap where more was meant to be;
+         lines do not. Cards can come back at three or more. */
       .project {
         margin: 0;
+      }
+      .project + .project {
+        margin-top: 12px;
       }
       .project span {
         color: var(--dim);
@@ -187,6 +190,10 @@
       <p class="project">
         <a href="https://vault.shamahan.com/" rel="noopener">Vault Planner</a>
         <span>— a layout planner for Fallout Shelter</span>
+      </p>
+      <p class="project">
+        <a href="https://bipduel.shamahan.com/" rel="noopener">BipDuel</a>
+        <span>— a two-player biplane dogfight in the browser</span>
       </p>
     </main>
   </body>
